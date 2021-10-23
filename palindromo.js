@@ -3,10 +3,11 @@ function palindromo(str){
 	for (let i = str.length -1; i>=0 ;i--){
 		newString += str[i];
 	}
-	return newString === str? "la cadena evaluda es palindroma" : "la cadena evaluada no es palindroma";
+	return newString === str? `la cadena evaluda ${str} es palindroma` 
+				: `la cadena evaluada ${str} no es palindroma`;
 }
 
 
-let resutl = palindromo("ama");
+//let resutl = palindromo("arenera");
 
-console.log(resutl);
+console.log(palindromo("arenea"));
