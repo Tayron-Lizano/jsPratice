@@ -2,7 +2,7 @@ function findLongestWordLength(str){
   let word = str.split(' ');
   let maxLength =0;
   let longestWord = "";
-
+ 
   for (let i =0; i<word.length; i++){
     if(word[i].length > maxLength){
       maxLength = word[i].length;
