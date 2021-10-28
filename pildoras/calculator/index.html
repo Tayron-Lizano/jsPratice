@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Calculator</title>
+
+		<style>
+			.calculator {
+				margin: auto;
+				margin-top: 50px;
+				background: #103d35;
+				width: 300px;
+				padding: 0px 0px 5px 0px;
+				border-radius: 6px;
+			}
+
+			.display-calculator,
+			.body-calculator {
+				padding: 5px;
+				border-radius: 5px;
+				display: flex;
+				justify-content: center;
+			}
+
+			.display-calculator {
+				height: 65px;
+				align-items: center;
+				background-color: grey;
+			}
+
+			.body-calculator {
+				margin-top: 4px;
+				flex-direction: column;
+			}
+			.display-calculator #display {
+				width: 100%;
+				height: 100%;
+				background-color: grey;
+				color: white;
+				font-size: 16px;
+				border: none;
+				text-align: end;
+			}
+
+			.body-calculator .row {
+				display: flex;
+			}
+
+			.body-calculator .row buttom {
+				padding: 5px;
+				margin: 2px;
+				background-color: #345b63;
+				flex: 1;
+				border-radius: 50%;
+				height: 50px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				cursor: pointer;
+			}
+
+			.body-calculator .row .numbers {
+				color: white;
+			}
+
+			.body-calculator .row .options {
+				background-color: #39a388;
+			}
+
+			.body-calculator .row .equal {
+				background-color: lightgray;
+			}
+
+			.body-calculator .row .ac {
+				background-color: #f0a500;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="calculator">
+			<div class="display-calculator">
+				<input type="text" id="display" />
+			</div>
+
+			<div class="body-calculator">
+				<div class="row">
+					<buttom class="ac" type="buttom">AC</buttom>
+					<buttom class="options" type="buttom">( )</buttom>
+					<buttom class="options" type="buttom">%</buttom>
+					<buttom class="options" type="buttom">/</buttom>
+				</div>
+				<div class="row">
+					<buttom class="numbers" type="buttom">7</buttom>
+					<buttom class="numbers" type="buttom">8</buttom>
+					<buttom class="numbers" type="buttom">9</buttom>
+					<buttom class="options" type="buttom">x</buttom>
+				</div>
+				<div class="row">
+					<buttom class="numbers" type="buttom">4</buttom>
+					<buttom class="numbers" type="buttom">5</buttom>
+					<buttom class="numbers" type="buttom">6</buttom>
+					<buttom class="options" type="buttom">-</buttom>
+				</div>
+				<div class="row">
+					<buttom class="numbers" type="buttom">1</buttom>
+					<buttom class="numbers" type="buttom">2</buttom>
+					<buttom class="numbers" type="buttom">3</buttom>
+					<buttom class="options" type="buttom">+</buttom>
+				</div>
+				<div class="row">
+					<buttom class="numbers" type="buttom">0</buttom>
+					<buttom class="numbers" type="buttom">.</buttom>
+					<buttom class="numbers" type="buttom">br</buttom>
+					<buttom class="equal" type="buttom">=</buttom>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
